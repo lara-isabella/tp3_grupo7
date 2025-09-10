@@ -3,13 +3,14 @@ package ar.edu.unju.escmi.tp3.ejercicio3;
 import java.util.Scanner;
 
 public class Ejercicio3 {
+    public static final String ROJO = "\u001B[91m";
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Empleado empleado = null;
         int opcion;
 
         do {
-            System.out.println("\n===== MENÚ EJERCICIO 3 =====");
+            System.out.println(ROJO + "\n************ MENU **************");
             System.out.println("1 - Crear empleado");
             System.out.println("2 - Aumentar salario");
             System.out.println("3 - Mostrar datos del empleado");

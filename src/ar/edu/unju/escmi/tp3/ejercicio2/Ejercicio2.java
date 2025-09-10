@@ -4,6 +4,7 @@ package ar.edu.unju.escmi.tp3.ejercicio2;
 import java.util.Scanner;
 
 public class Ejercicio2 {
+public static final String VERDE = "\u001B[32m";
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         GatoSimple gato = null;
@@ -13,7 +14,7 @@ public class Ejercicio2 {
 
         int opcion;
         do {
-            System.out.println("\n--- MENÚ ---");
+            System.out.println(VERDE + "\n************* MENU **************");
             System.out.println("1 Crear gato simple");
             System.out.println("2 Dar de comer a un gato simple");
             System.out.println("3 Mostrar todos los gatos");

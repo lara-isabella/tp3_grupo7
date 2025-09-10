@@ -5,6 +5,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Ejercicio1 {
+    public static final String AMARILLO = "\u001B[33m"; //lo usamos para hacer el menu de algun color en la consola
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -13,12 +14,12 @@ public class Ejercicio1 {
         int op;
 
         do {
-            System.out.println("******** MENU ********");
-            System.out.println("1 – Crear objeto con Constructor por defecto");
-            System.out.println("2 – Crear objeto con Constructor parametrizado");
-            System.out.println("3 – Crear objeto con Constructor (dni, nombre, fecha de nacimiento)");
-            System.out.println("4 – Mostrar personas");
-            System.out.println("5 – Salir");
+            System.out.println(AMARILLO + "****************************** MENU ********************************");
+            System.out.println("1  Crear objeto con Constructor por defecto");
+            System.out.println("2  Crear objeto con Constructor parametrizado");
+            System.out.println("3  Crear objeto con Constructor (dni, nombre, fecha de nacimiento)");
+            System.out.println("4  Mostrar personas");
+            System.out.println("5  Salir");
             System.out.print("Seleccione una opción: ");
             op = scanner.nextInt();
             scanner.nextLine();
